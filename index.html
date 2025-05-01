@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saúde Fácil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Rota Saúde</h1>
+    <p>Seu guia para acesso à saúde pública</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>📍 Localize postos de saúde</h2>
+      <input type="text" id="location-input" placeholder="Digite a cidade ou endereço...">
+      <button onclick="buscarLocal()">Buscar</button>
+      <div id="mapa" style="height: 400px; margin-top: 20px;"></div>
+    </div>
+
+    <div class="card">
+      <h2>📄 Documentos necessários</h2>
+      <ul>
+        <li>Documento com foto (RG, CNH ou similar)</li>
+        <li>Cartão do SUS</li>
+        <li>Comprovante de residência</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>💉 Vacinas e programas do SUS</h2>
+      <ul>
+        <li>Vacina BCG, Pentavalente, Tríplice Viral, COVID-19</li>
+        <li>Programas como Saúde da Família e Farmácia Popular</li>
+      </ul>
+      <br>
+      <button>Ver detalhes</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Rota Saúde. Todos os direitos reservados.
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
